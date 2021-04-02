@@ -1,0 +1,27 @@
+//Variables
+@import "variables";
+
+//Addons
+@import "addons/font-icon";
+@import "addons/font-icon-reset";
+@import "addons/ajax_load";
+@import "addons/message";
+
+//Theme
+
+
+//Pages
+@import "pages/home";
+
+//Fold
+
+
+//Remove outline
+*, *:before, *:after {
+  outline: none !important;
+}
+
+
+.carousel-item {
+  height: 450px;
+}

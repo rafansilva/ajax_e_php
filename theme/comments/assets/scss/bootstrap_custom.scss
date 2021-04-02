@@ -1,0 +1,9 @@
+@import "variables";
+
+$theme-colors: (
+        "front": $color-front-default
+);
+
+//Sass do Bootstrap
+@import "../../../../shared/styles/bootstrap/scss/bootstrap";
+

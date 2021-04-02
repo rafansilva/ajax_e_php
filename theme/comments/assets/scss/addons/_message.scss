@@ -1,0 +1,31 @@
+.message {
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
+  -webkit-border-radius: $radius-medium;
+  -moz-border-radius: $radius-medium;
+  border-radius: $radius-medium;
+  border: 1px solid #cccccc;
+  font-weight: $weight-bold;
+}
+
+.message.success {
+  color: $color_front_default;
+  border-color: $color_front_default;
+}
+
+.message.info {
+  color: $color-blue;
+  border-color: $color-blue;
+}
+
+.message.warning {
+  color: $color-yellow;
+  border-color: $color-yellow;
+}
+
+.message.error {
+  color: $color-red;
+  border-color: $color-red;
+}
