@@ -25,6 +25,5 @@
 
 <script src="<?= url("/shared/scripts/jquery-3.6.0.min.js"); ?>"></script>
 <script src="<?= url("/theme/comments/assets/js/script.js"); ?>"></script>
-<?= $v->section("js"); ?>
 </body>
 </html>

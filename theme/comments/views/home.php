@@ -1,22 +1,43 @@
 <?php $v->layout("_theme"); ?>
 
-<section class="content">
-    <div class="box_form">
-        <h1>Deixe seu Comentário:</h1>
-        <div class="ajax_response" style="display: none"></div>
-        <form class="form" action="<?= $router->route('comment.create'); ?>" method="post"
-              enctype="multipart/form-data">
-            <label for="name">Nome</label><br>
-            <input type="text" name="name" id="name"/><br><br>
+<div class="main_form_comment py-5 px-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-front">Deixe seu Comentário:</h1>
+        </div>
 
-            <label for="comment">Comentário</label><br>
-            <textarea name="comment" id="comment"></textarea><br><br>
+        <div class="row">
+            <form class="form" action="<?= $router->route('comment.create'); ?>" method="post"
+                  enctype="multipart/form-data">
 
-            <button class="btn btn-front">Enviar Comentário</button><br><br>
-        </form>
+                <div class="form-group">
+                    <h2 class="text-black-50">Nome:</h2>
+                    <input name="name" type="text" class="form-control" placeholder="Insira seu nome">
+                </div>
+
+                <div class="form-group">
+                    <h2 class="text-black-50">Comentário:</h2>
+                    <textarea name="comment" rows="5" placeholder="Escreva sua mensagem"
+                              class="form-control"></textarea>
+                </div>
+
+
+                <div class="form-group text-left">
+                    <button class="btn btn-front">Enviar Contato</button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="box_comment">
+<hr/>
 
+<div class="main_comments">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
     </div>
-</section>
+</div>
