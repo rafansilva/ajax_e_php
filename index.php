@@ -8,9 +8,9 @@ $router = new Router(ROOT);
 $router->namespace("Source\App");
 
 $router->group(null);
-$router->get("/", "Comment:home", "comment.home");
-$router->post("/create", "Form:create", "form.create");
-$router->post("/delete", "Form:delete", "form.delete");
+$router->get("/", "Comments:home", "comment.home");
+$router->post("/create", "Comments:create", "comment.create");
+
 
 $router->dispatch();
 

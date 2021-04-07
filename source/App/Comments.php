@@ -3,10 +3,11 @@
 
 namespace Source\App;
 
+use Source\Models\Comment;
 
 use League\Plates\Engine;
 
-class Comment
+class Comments
 {
     /** @var Engine */
     private $view;
@@ -24,6 +25,20 @@ class Comment
 
     public function home(): void
     {
+        echo $this->view->render("views/home", [
+            "title" => "Sistema de Comentários",
+            "comments" => (new Comment())->find()->order("DESC")->fetch(true)
+        ]);
+    }
+
+    public function create(array $data): void
+    {
+        $data = filter_var_array($data,FILTER_SANITIZE_STRIPPED);
+
+        if ($data["name"] || $data["message"]){
+
+        }
+
         echo $this->view->render("views/home", [
             "title" => "Sistema de Comentários"
         ]);
