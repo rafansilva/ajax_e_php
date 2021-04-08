@@ -29,8 +29,8 @@ $(function () {
             success: function (callback){
                 load("close");
 
-                if (callback.response){
-                    form_ajax.html(callback.response).effect("bounce").fadeIn();
+                if (callback.message){
+                    form_ajax.html(callback.message).fadeIn(100).effect("bounce");
                 } else{
                     $(this).html("");
                 }

@@ -7,11 +7,10 @@
         </div>
 
         <div class="row">
-            <div class="form_ajax" style="display: none"></div>
 
-            <form class="form" action="<?= $router->route('comment.create'); ?>" method="post"
+            <form class="form" action="<?= $router->route('comments.create'); ?>" method="post"
                   enctype="multipart/form-data">
-
+                <div class="form_ajax" style="display: none"></div>
                 <div class="form-group">
                     <h2 class="text-black-50">Nome:</h2>
                     <input name="name" type="text" class="form-control" placeholder="Insira seu nome">
@@ -35,15 +34,11 @@
 <hr/>
 
 <div class="main_comments">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <?php if (!empty($comments)): ?>
-                    <?php foreach ($comments as $comment): ?>
-                        <?php $v->insert("comment", ["comment" => $comment]); ?>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
+
+            <?php if (!empty($comments)): ?>
+                <?php foreach ($comments as $comment): ?>
+                    <?php $v->insert("comment", ["comment" => $comment]); ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+
 </div>

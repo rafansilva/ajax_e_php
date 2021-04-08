@@ -2442,28 +2442,27 @@
 }
 
 .message.success {
-  color: #C0362C;
-  border-color: #C0362C;
+  color: #1dd1a1;
+  border-color: #1dd1a1;
 }
 
 .message.info {
-  color: #39AED9;
-  border-color: #39AED9;
+  color: #2e86de;
+  border-color: #2e86de;
 }
 
 .message.warning {
-  color: #F5B946;
-  border-color: #F5B946;
+  color: #ff9f43;
+  border-color: #ff9f43;
 }
 
 .message.error {
-  color: #D94352;
-  border-color: #D94352;
+  color: #ee5253;
+  border-color: #ee5253;
 }
 
 .main_form_comment {
   width: 1000px;
-  height: 100vh;
   background: #fff;
   box-shadow: 0px 0px 10px #CCC;
   margin: 0 auto;

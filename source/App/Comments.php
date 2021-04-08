@@ -33,14 +33,22 @@ class Comments
 
     public function create(array $data): void
     {
-        $data = filter_var_array($data,FILTER_SANITIZE_STRIPPED);
+        $data = filter_var_array($data,FILTER_SANITIZE_STRING);
 
-        if ($data["name"] || $data["message"]){
-
+        if (in_array("", $data)){
+            $json["message"] = message("error", "Informe seu nome e comentário");
+            echo json_encode($json);
+            return;
         }
 
-        echo $this->view->render("views/home", [
-            "title" => "Sistema de Comentários"
-        ]);
+        $comment = new Comment();
+        $comment->name = filter_var($data["name"], FILTER_SANITIZE_STRIPPED);
+        $comment->comment = filter_var($data["comment"], FILTER_SANITIZE_STRIPPED);
+
+        $comment->save();
+
+        $json["comment"] = $this->view->render("views/comment", ["comment" => $comment]);
+        echo json_encode($json);
+        return;
     }
 }

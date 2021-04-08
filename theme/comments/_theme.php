@@ -24,6 +24,7 @@
 </main>
 
 <script src="<?= url("/shared/scripts/jquery-3.6.0.min.js"); ?>"></script>
+<script src="<?= url("/shared/scripts/jquery-ui.js"); ?>"></script>
 <script src="<?= url("/theme/comments/assets/js/script.js"); ?>"></script>
 </body>
 </html>

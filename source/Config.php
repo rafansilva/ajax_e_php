@@ -1,7 +1,7 @@
 <?php
 
 /** BASE URL */
-define("ROOT", "https://www.localhost/ajax_e_php/");
+define("ROOT", "https://www.localhost/ajax_e_php");
 
 
 /** DATABASE */
@@ -10,8 +10,8 @@ define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "datalayer_example",
-    "username" => "comments",
+    "dbname" => "comments",
+    "username" => "root",
     "passwd" => "",
     "options" => [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",

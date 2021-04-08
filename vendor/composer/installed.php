@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '80f98c1cce2c6d065ba693e4f8e39ca2de698033',
     'name' => 'rafansilva/ajax_e_php',
   ),
   'versions' => 
@@ -40,12 +40,12 @@
     ),
     'rafansilva/ajax_e_php' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '80f98c1cce2c6d065ba693e4f8e39ca2de698033',
     ),
   ),
 );

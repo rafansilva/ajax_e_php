@@ -8,8 +8,8 @@ $router = new Router(ROOT);
 $router->namespace("Source\App");
 
 $router->group(null);
-$router->get("/", "Comments:home", "comment.home");
-$router->post("/create", "Comments:create", "comment.create");
+$router->get("/", "Comments:home", "comments.home");
+$router->post("/create", "Comments:create", "comments.create");
 
 
 $router->dispatch();
