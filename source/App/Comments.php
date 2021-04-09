@@ -27,7 +27,7 @@ class Comments
     {
         echo $this->view->render("views/home", [
             "title" => "Sistema de Comentários",
-            "comments" => (new Comment())->find()->order("DESC")->fetch(true)
+            "comments" => (new Comment())->find()->order("created_at DESC")->fetch(true)
         ]);
     }
 
@@ -42,13 +42,12 @@ class Comments
         }
 
         $comment = new Comment();
-        $comment->name = filter_var($data["name"], FILTER_SANITIZE_STRIPPED);
-        $comment->comment = filter_var($data["comment"], FILTER_SANITIZE_STRIPPED);
+        $comment->name = $data["name"];
+        $comment->comment = $data["comment"];
 
         $comment->save();
 
         $json["comment"] = $this->view->render("views/comment", ["comment" => $comment]);
         echo json_encode($json);
-        return;
     }
 }

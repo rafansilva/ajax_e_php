@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="<?= url("/theme/comments/assets/css/bootstrap_custom.css"); ?>"/>
     <link rel="stylesheet" href="<?= url("/theme/comments/assets/css/app.css"); ?>"/>
+    <link rel="icon" type="image/svg" href="<?= url("/theme/comments/assets/images/favicon.svg"); ?>"/>
 </head>
 <body>
 

@@ -1,7 +1,7 @@
 <?php
 
 /** BASE URL */
-define("ROOT", "https://www.localhost/ajax_e_php");
+define("ROOT", "http://localhost/ajax_e_php");
 
 
 /** DATABASE */

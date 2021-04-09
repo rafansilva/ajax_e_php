@@ -2,6 +2,7 @@
   width: 1000px;
   background: #fff;
   box-shadow: 0px 0px 10px #CCC;
+  border-radius: 5px;
   margin: 0 auto;
 
   form {
@@ -20,16 +21,13 @@
 }
 
 .main_comments {
-  .b_comm {
-    padding: 30px;
-  }
-
-  .b_comm:nth-child(even) {
-    background-color: #F5F5F5;
-  }
-
-  .b_comm:nth-child(odd) {
-    background-color: #DDD;
-  }
+  width: 1000px;
+  background: #fff;
+  box-shadow: 0px 0px 10px #CCC;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
 }
+
+
 

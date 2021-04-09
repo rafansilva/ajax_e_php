@@ -21,22 +21,25 @@ $(function () {
         $.ajax({
             url: form.attr("action"),
             data: form.serialize(),
-            type: "post",
+            type: "POST",
             dataType: "json",
             beforeSend: function () {
                 load("open");
             },
-            success: function (callback){
+            success: function (callback) {
                 load("close");
 
-                if (callback.message){
+                if (callback.message) {
                     form_ajax.html(callback.message).fadeIn(100).effect("bounce");
-                } else{
-                    $(this).html("");
+                } else {
+                    form_ajax.fadeOut(function () {
+                        $(this).html("");
+                    });
                 }
 
-                if (callback.comment){
+                if (callback.comment) {
                     comments.prepend(callback.comment);
+                    form.trigger("reset");
                 }
             }
         });
