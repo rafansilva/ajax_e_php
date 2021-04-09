@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa2f35fb7e4fa1c515b717f7a01d6be1",
+    "content-hash": "c06f9d4a7d9f9806ad26253f8c4eb60f",
     "packages": [
         {
             "name": "coffeecode/datalayer",
@@ -194,7 +194,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-pdo": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

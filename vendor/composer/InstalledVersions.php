@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '80f98c1cce2c6d065ba693e4f8e39ca2de698033',
+    'reference' => '2466a7d51995ddf67064553fc608a1524fb72ff3',
     'name' => 'rafansilva/ajax_e_php',
   ),
   'versions' => 
@@ -68,7 +68,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '80f98c1cce2c6d065ba693e4f8e39ca2de698033',
+      'reference' => '2466a7d51995ddf67064553fc608a1524fb72ff3',
     ),
   ),
 );
